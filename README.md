@@ -1,4 +1,5 @@
 # clj-gdrive-downloader
+[![Clojars Project](https://img.shields.io/clojars/v/clj-gdrive-downloader.svg)](https://clojars.org/clj-gdrive-downloader)
 
 Minimal utility to download shared compressed files from Google Drive.
 
