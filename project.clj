@@ -1,5 +1,5 @@
 (defproject clj-gdrive-downloader "0.1.0"
-  :description "Download shared files from Google Drive."
+  :description "Minimal utility to download shared compressed files from Google Drive."
   :url "https://github.com/Alcamech/clj-gdrive-downloader"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
