@@ -1,36 +1,39 @@
 # clj-gdrive-downloader
 
-FIXME: description
+Minimal utility to download shared compressed files from Google Drive.
 
-## Installation
-
-Download from http://example.com/FIXME.
+Supported filetypes: 
+* `.zip`     
+* `.tgz`
 
 ## Usage
+Downloads a shared compressed file from google drive into a given folder. 
+Optionally decompresses it. 
 
-FIXME: explanation
+   Arguments:
+   - filename: name + extensions you want to save the file as
+   - dest-path: the destination to save the downloaded file
+   - url: google drive download url
+   - overwrite: optional, if true forces re-download and overwrite
+   - extract: optional, if true will extract a compressed a file
 
-    $ java -jar clj-gdrive-downloader-0.1.0-standalone.jar [args]
+```clojure
+(download-file-from-google-drive "tokenize.zip" "/path/to/dest/" "https://drive.google.com/link")
+Downloading tokenize.zip into /path/to/dest/
+File successfully downloaded.
+=> nil
+```
+## TODO 
 
-## Options
+Add support for additional filetypes
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+* bzip2 
+* gunzip 
+* xz 
 
 ## License
 
-Copyright © 2020 FIXME
+Copyright © 2020 Lawton C. Mizell
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
