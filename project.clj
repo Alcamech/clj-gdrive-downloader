@@ -9,4 +9,5 @@
                  [hickory "0.7.1"]
                  [me.raynes/fs "1.4.6"]]
   :main ^:skip-aot clj-gdrive-downloader.core
-  :target-path "target/%s")
+  :target-path "target/%s"
+  :profiles {:uberjar {:aot :all}})
